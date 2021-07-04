@@ -1,9 +1,9 @@
-num1 = 42 #- variable declaration - Data Types- Primitive - Numbers
-num2 = 2.3 #- variable declaration
-boolean = True # Primitive - Boolean
-string = 'Hello World' #  Primitive - String
-pizza_toppings = ['Pepperoni', 'Sausage', 'Jalepenos', 'Cheese', 'Olives'] # Composite Lists, ordered / index begins at 0 / changeable
-person = {'name': 'John', 'location': 'Salt Lake', 'age': 37, 'is_balding': False} # Composite Dictionary, stores values in key:value pairs
+num1 = 42 #- variable declaration - Primitive - Number initialized
+num2 = 2.3 #- variable declaration - Primitive - Float initialized
+boolean = True # Primitive - Boolean Initialized
+string = 'Hello World' #  Primitive - String Initialized
+pizza_toppings = ['Pepperoni', 'Sausage', 'Jalepenos', 'Cheese', 'Olives'] # Composite Lists, Initialized, ordered / index begins at 0 / changeable
+person = {'name': 'John', 'location': 'Salt Lake', 'age': 37, 'is_balding': False} # Composite Dictionary, Initialized stores values in key:value pairs
 fruit = ('blueberry', 'strawberry', 'banana') # Composite Tuples store multiple items in a single variable / ordered and unchangeable 
 #/index begins at 0 / one item tuple gets a comma after
 print(type(fruit)) # type() function returns the type of the object if looking to the preceedind object, it would return 'tuple'
@@ -12,7 +12,7 @@ pizza_toppings.append('Mushrooms') #Dictionary change value
 print(person['name']) # Composite Dictionary access value
 person['name'] = 'George' # Composite Dictionary change/add value
 person['eye_color'] = 'blue' #- Composite Dictionary change/add value 
-print(fruit[2]) # Composite lists access value # return index of 2 in the List fruit
+print(fruit[2]) # Composite tuple access value # return index of 2 in the List fruit
 
 if num1 > 45: #- conditional if else
     print("It's greater") # return 
@@ -52,13 +52,13 @@ for topping in pizza_toppings:
         break #for loop break
 
 def print_hello_ten_times(): #function 
-    for num in range(10): # range function argument
+    for num in range(10): # range loop starts at 0 and goes to 10
         print('Hello') #return 
 
 print_hello_ten_times() # function call
 
 def print_hello_x_times(x): #function paramater
-    for num in range(x): #range function
+    for num in range(x): #range function for loop
         print('Hello') #return
 
 print_hello_x_times(4) # function argument
@@ -67,16 +67,16 @@ def print_hello_x_or_ten_times(x = 10): #function argument
     for num in range(x): #for loop  range function
         print('Hello') #return
 
-print_hello_x_or_ten_times() #function
-print_hello_x_or_ten_times(4) #function argrument
+print_hello_x_or_ten_times() #function call to ten
+print_hello_x_or_ten_times(4) #function call with argrument to 4
 
 
 """
 Bonus section
 """
 
-# print(num3) ? 
-num3 = 72 ?
+print(num3)
+num3 = 72 
 fruit[0] = 'cranberry' # TypeError: 'tuple' object does not support item assignment
 print(person['favorite_team']) #key error favorite team
 print(pizza_toppings[7]) # IndexError: list index out of range
